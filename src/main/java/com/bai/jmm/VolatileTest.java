@@ -1,6 +1,5 @@
 package com.bai.jmm;
 
-import java.util.concurrent.TimeUnit;
 
 /**
  * JMM JAVA 内存模型
@@ -15,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class VolatileTest {
 
-    private static volatile  boolean flag = true;
+    private static volatile boolean flag = true;
 
     public static void main(String[] args) {
         new Thread01().start();
@@ -29,6 +28,11 @@ public class VolatileTest {
             while (flag){
 
             }
+            try {
+                Thread.sleep(2000);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
            System.out.println("Thread01 执行结束");
         }
     }
@@ -36,11 +40,6 @@ public class VolatileTest {
     static class Thread02 extends Thread{
         @Override
         public void run() {
-            try {
-                Thread.sleep(2000);
-            }catch (Exception e){
-                e.printStackTrace();
-            }
             flag = false;
             System.out.println("Thread02 执行结束");
         }
