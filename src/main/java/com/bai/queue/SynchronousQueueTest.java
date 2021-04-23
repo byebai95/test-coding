@@ -1,4 +1,4 @@
-package com.bai.cas;
+package com.bai.queue;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
