@@ -4,6 +4,10 @@ import java.util.Random;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 信号量锁 案例
+ */
+
 public class SemaphoreTest {
 
     public static void main(String[] args) {

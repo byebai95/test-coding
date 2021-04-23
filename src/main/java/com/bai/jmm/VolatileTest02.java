@@ -22,11 +22,13 @@ public class VolatileTest02 {
     public static void main(String[] args) throws Exception{
         MyThread myThread = new MyThread();
 
-        for(int i=0; i<10; i++){
-            new Thread(myThread).start();
-        }
+        Thread t1 = new Thread(myThread);
+        Thread t2 = new Thread(myThread);
 
-        Thread.sleep(5000);
+        t1.start();
+        t2.start();
+        t1.join();
+        t2.join();
 
         System.out.println(count);
     }

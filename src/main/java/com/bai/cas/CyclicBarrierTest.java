@@ -2,6 +2,10 @@ package com.bai.cas;
 
 import java.util.concurrent.CyclicBarrier;
 
+/**
+ * 栅栏锁
+ */
+
 public class CyclicBarrierTest {
 
     public static void main(String[] args) {

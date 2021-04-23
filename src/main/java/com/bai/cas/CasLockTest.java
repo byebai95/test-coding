@@ -1,5 +1,9 @@
 package com.bai.cas;
 
+/**
+ * 测试乐观锁
+ */
+
 public class CasLockTest {
 
     public static CasLock casLock = new CasLock();
