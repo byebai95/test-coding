@@ -1,13 +1,12 @@
 package com.bai.queue;
 
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
 public class SynchronousQueueTest {
     public static void main(String[] args) throws Exception{
 
-        BlockingQueue<String> blockingQueue = new SynchronousQueue<>();
+        SynchronousQueue<String> blockingQueue = new SynchronousQueue<>();
 
         new Thread(()->{
             try {

@@ -5,11 +5,11 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-public class BlockingQueueTest {
+public class ArrayBlockingQueueTest {
 
     public static void main(String[] args) throws Exception{
 
-        BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
+        ArrayBlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
 
 
         System.out.println(blockingQueue.add("a"));

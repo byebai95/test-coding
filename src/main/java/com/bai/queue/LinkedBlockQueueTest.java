@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class LinkedBlockQueueTest {
     public static void main(String[] args) {
 
-        BlockingQueue<String> blockingQueue = new LinkedBlockingQueue<>();
+        LinkedBlockingQueue<String> blockingQueue = new LinkedBlockingQueue<>();
 
         blockingQueue.add("a");
 
