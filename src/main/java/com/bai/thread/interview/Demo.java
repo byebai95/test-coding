@@ -15,7 +15,7 @@ public class Demo {
                 try{
                     lock.lock();
                     while(state%3==0){
-                        System.out.println("a");
+                        System.out.print("a");
                         state++;
                         i++;
                     }
@@ -35,7 +35,7 @@ public class Demo {
                 try{
                     lock.lock();
                     while(state%3==1){
-                        System.out.println("b");
+                        System.out.print("b");
                         state++;
                         i++;
                     }
@@ -56,7 +56,7 @@ public class Demo {
                 try{
                     lock.lock();
                     while(state%3==2){
-                        System.out.println("c");
+                        System.out.print("c");
                         state++;
                         i++;
                     }
