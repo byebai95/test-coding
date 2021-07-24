@@ -1,4 +1,4 @@
-package com.bai.type;
+package com.bai.type.string;
 
 public class StringTest {
     public static void main(String[] args) {
