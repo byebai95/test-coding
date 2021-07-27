@@ -1,4 +1,4 @@
-package com.bai.type;
+package com.bai.type.consruct;
 
 public class SonTest extends ParentTest{
     public SonTest() {

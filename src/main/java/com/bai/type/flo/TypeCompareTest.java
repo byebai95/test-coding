@@ -1,4 +1,4 @@
-package com.bai.type;
+package com.bai.type.flo;
 
 public class TypeCompareTest {
     public static void main(String[] args) {
