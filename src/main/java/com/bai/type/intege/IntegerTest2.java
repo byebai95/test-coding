@@ -1,4 +1,4 @@
-package com.bai.type;
+package com.bai.type.intege;
 
 public class IntegerTest2 {
     public static void main(String[] args) {
